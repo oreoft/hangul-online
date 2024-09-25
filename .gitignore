@@ -1,23 +1,49 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js dependencies
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# npm debug log
+npm-debug.log*
 
-# testing
-/coverage
+# yarn error logs
+yarn-error.log
 
-# production
+# Optional: Uncomment if you're using yarn
+# yarn.lock
+
+# Optional: Uncomment if you're using pnpm
+# pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+/dist
 /build
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# OS generated files
+.DS_Store
+Thumbs.db
+.idea
+
+# Ignore venv in functions folder for Firebase
+functions/venv/
+
+# Also ignore other common Python virtual environment names
+functions/.venv/
+functions/env/
+functions/.env/
+
+# Ignore Python cache files in functions folder
+functions/__pycache__/
+functions/**/__pycache__/
+functions/*.pyc
+functions/**/*.pyc
