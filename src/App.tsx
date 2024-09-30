@@ -1,11 +1,8 @@
 import React, {useState} from 'react';
-import {Tabs} from 'antd';
 import HangulCharacters from './HangulCharacters';
 import CommonWords from './CommonWords';
 import {AppOutline, UnorderedListOutline} from 'antd-mobile-icons';
 import {TabBar} from 'antd-mobile';
-
-const {TabPane} = Tabs;
 
 const tabs = [
     {
